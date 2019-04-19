@@ -1,8 +1,8 @@
 defmodule MasteryTest do
   use ExUnit.Case
-  doctest Mastery
+  # doctest Mastery
 
-  test "greets the world" do
-    assert Mastery.hello() == :world
-  end
+  # test "greets the world" do
+  #   assert Mastery.hello() == :world
+  # end
 end
