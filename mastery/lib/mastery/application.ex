@@ -6,8 +6,12 @@ defmodule Mastery.Application do
   use Application
 
   def start(_type, _args) do
+    IO.puts "starting Mastery"
     # List all child processes to be supervised
     children = [
+      { Mastery.Boundary.QuizManager, 
+        [name: Mastery.Boundary.QuizManager]
+      }
       # Starts a worker by calling: Mastery.Worker.start_link(arg)
       # {Mastery.Worker, arg}
     ]
